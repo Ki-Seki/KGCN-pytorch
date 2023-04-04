@@ -1,3 +1,6 @@
+注意：这个分支（[ugt-only](https://github.com/Ki-Seki/KGCN-pytorch-updated/tree/ugt-only)）仅用于我的本科毕业论文。  
+NOTE: This branch ([ugt-only](https://github.com/Ki-Seki/KGCN-pytorch-updated/tree/ugt-only)) is only for my undergraduate thesis.
+
 # KGCN-pytorch-updated
 
 This is an updated PyTorch implementation of the KGCN model, building upon two previous works: [TensorFlow KGCN](https://github.com/hwwang55/KGCN) and [PyTorch KGCN](https://github.com/zzaebok/KGCN-pytorch). The former is the offical one while the latter is a PyTorch version implemented by [@zzaebok](https://github.com/zzaebok). This repo modifies directly on his [PyTorch KGCN](https://github.com/zzaebok/KGCN-pytorch).
