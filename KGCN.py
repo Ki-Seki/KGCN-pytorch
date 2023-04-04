@@ -35,8 +35,8 @@ def prepare_arguments(arguments=None):
     parser = argparse.ArgumentParser()
     parser.add_argument('--dataset', type=str, default='music', help='which dataset to use')
     parser.add_argument('--aggregator', type=str, default='sum', help='which aggregator to use, sum, concat, or neighbor')
-    parser.add_argument('--mixer', type=str, default='attention', help='which mixer to use, attention or transe?')
-    parser.add_argument('--n_epochs', type=int, default=20, help='the number of epochs')
+    parser.add_argument('--mixer', type=str, default='transe', help='which mixer to use, attention or transe?')
+    parser.add_argument('--n_epochs', type=int, default=150, help='the number of epochs')
     parser.add_argument('--neighbor_sample_size', type=int, default=8, help='the number of neighbors to be sampled')
     parser.add_argument('--dim', type=int, default=16, help='dimension of user and entity embeddings')
     parser.add_argument('--n_iter', type=int, default=1, help='number of iterations when computing entity representation')
@@ -120,7 +120,7 @@ def experiment(arguments=None):
     return loss_list, test_loss_list, auc_score_list
 
 if __name__ == '__main__':
-    arguments = '--dataset product --mixer transe --n_epochs 10 --batch_size=16 --l2_weight 1e-4'
+    arguments = None
     loss_list, test_loss_list, auc_score_list = experiment(arguments)
 
     # plot losses / scores
